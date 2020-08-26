@@ -44,10 +44,10 @@ function App() {
     <Provider store={store} >
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Paper className={classes.root}>
-          <Paper elevation={5} className={classes.paper}>
+        <Paper square className={classes.root}>
+          <Paper square elevation={5} className={classes.paper}>
             <Typography variant="h5">
-              React Starter Pack with Redux
+              React Starter Pack with Redux and Adsence
             </Typography>
           </Paper>
         </Paper>
