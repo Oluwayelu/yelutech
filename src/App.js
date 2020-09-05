@@ -27,7 +27,17 @@ function App() {
     <Provider store={store} >
       <ThemeProvider theme={theme}>
         <CssBaseline />
+<<<<<<< HEAD
         <LandingPage />
+=======
+        <Paper square className={classes.root}>
+          <Paper square elevation={5} className={classes.paper}>
+            <Typography variant="h5">
+              React Starter Pack with Redux and Adsence
+            </Typography>
+          </Paper>
+        </Paper>
+>>>>>>> 53393d414461e51895f44f669181a88deaf2ae99
       </ThemeProvider>
     </Provider>
   );
