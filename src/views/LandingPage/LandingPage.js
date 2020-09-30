@@ -17,7 +17,6 @@ import WorkSection from './Sections/WorkSection';
 const useStyles = makeStyles(styles)
 const LandingPage = (props) => {
   const classes = useStyles()
-
   return (
     <div>
       <Navbar
@@ -36,6 +35,7 @@ const LandingPage = (props) => {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
+              <img className={classes.logo} src={require('../../assets/img/logo-1.png')} alt="logo" /><br />
               <h1 className={classes.title}>Your Story Starts With Us.</h1>
               <h4>
                 Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh
@@ -56,6 +56,7 @@ const LandingPage = (props) => {
           </GridContainer>
         </div>
       </Parallax>
+
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />

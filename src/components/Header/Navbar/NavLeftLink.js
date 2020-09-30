@@ -25,9 +25,8 @@ const NavLeftLinks = (props) => {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.yelutech.com/"
+          href="/"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
           Home
@@ -35,9 +34,8 @@ const NavLeftLinks = (props) => {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.yelutech.com/services"
+          href="/services"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
           Services
@@ -45,7 +43,7 @@ const NavLeftLinks = (props) => {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.yelutech.com/blog"
+          href="/blog"
           color="transparent"
           target="_blank"
           className={classes.navLink}
@@ -55,9 +53,8 @@ const NavLeftLinks = (props) => {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.yelutech.com/about"
+          href="/about"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
           About
@@ -65,9 +62,8 @@ const NavLeftLinks = (props) => {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.yelutech.com/contacts"
+          href="/contact"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
           Contact

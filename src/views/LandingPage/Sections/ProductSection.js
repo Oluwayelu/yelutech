@@ -33,7 +33,6 @@ export default function ProductSection() {
           <GridItem xs={6} sm={6} md={3}>
             <InfoArea
               title="Website Development"
-              description="Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh h f k fk n  f  ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg bng;kb gk;bgkb g ;bg."
               icon={Computer}
               iconColor="info"
               vertical
@@ -42,7 +41,6 @@ export default function ProductSection() {
           <GridItem xs={6} sm={6} md={3}>
             <InfoArea
               title="Mobile Development(iOS & Android)"
-              description="Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh h f k fk n  f  ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg bng;kb gk;bgkb g ;bg."
               icon={MobileFriendly}
               iconColor="success"
               vertical
@@ -51,7 +49,6 @@ export default function ProductSection() {
           <GridItem xs={6} sm={6} md={3}>
             <InfoArea
               title="SEO"
-              description="Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh h f k fk n  f  ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg bng;kb gk;bgkb g ;bg."
               icon={Assessment}
               iconColor="danger"
               vertical
@@ -60,7 +57,6 @@ export default function ProductSection() {
           <GridItem xs={6} sm={6} md={3}>
             <InfoArea
               title="Email Marketing"
-              description="Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh h f k fk n  f  ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg bng;kb gk;bgkb g ;bg."
               icon={AlternateEmail}
               iconColor="rose"
               vertical
@@ -69,7 +65,6 @@ export default function ProductSection() {
           <GridItem xs={6} sm={6} md={3}>
             <InfoArea
               title="Social Media Management"
-              description="Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh h f k fk n  f  ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg bng;kb gk;bgkb g ;bg."
               icon={ChatBubble}
               iconColor="primary"
               vertical
@@ -78,7 +73,6 @@ export default function ProductSection() {
           <GridItem xs={6} sm={6} md={3}>
             <InfoArea
               title="Brand Design & Strategy"
-              description="Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh h f k fk n  f  ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg bng;kb gk;bgkb g ;bg."
               icon={Business}
               iconColor="gray"
               vertical
@@ -87,7 +81,6 @@ export default function ProductSection() {
           <GridItem xs={6} sm={6} md={3}>
             <InfoArea
               title="Audience Analytics"
-              description="Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh h f k fk n  f  ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg bng;kb gk;bgkb g ;bg."
               icon={BarChart}
               iconColor="rose"
               vertical
@@ -96,7 +89,6 @@ export default function ProductSection() {
           <GridItem xs={6} sm={6} md={3}>
             <InfoArea
               title="Team Training"
-              description="Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh h f k fk n  f  ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg bng;kb gk;bgkb g ;bg."
               icon={People}
               iconColor="danger"
               vertical
