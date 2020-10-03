@@ -12,6 +12,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Favorite from "@material-ui/icons/Favorite";
 
 import styles from "../../assets/js/components/footerStyle";
+import GridContainer from "../Grid/GridContainer";
+import GridItem from "../Grid/GridItem";
 
 const useStyles = makeStyles(styles);
 
@@ -30,32 +32,48 @@ export default function Footer(props) {
     <footer className={footerClasses}>
       <div className={classes.container}>
         <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
+          <GridContainer className={classes.list}>
+            <GridItem xs={12} sm={12} md={12} className={classes.inlineBlock}>
               <a
                 href="/"
                 className={classes.block}
               >
                 YeLu Tech
               </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
+            </GridItem>
+            <GridItem xs={3} className={classes.inlineBlock}>
+              <a
+                href="/about"
+                className={classes.block}
+              >
+                About Us
+              </a>
+            </GridItem>
+            <GridItem xs={3} className={classes.inlineBlock}>
+              <a
+                href="/contact"
+                className={classes.block}
+              >
+                Contact Us
+              </a>
+            </GridItem>
+            <GridItem xs={3} className={classes.inlineBlock}>
               <a
                 href="/blog"
                 className={classes.block}
               >
                 Blog
               </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
+            </GridItem>
+            <GridItem xs={3} className={classes.inlineBlock}>
               <a
                 href="/license"
                 className={classes.block}
               >
                 Licenses
               </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
+            </GridItem>
+            <GridItem xs={3} className={classes.inlineBlock}>
               <a
                 href="/terms&condition"
                 className={classes.block}
@@ -63,24 +81,9 @@ export default function Footer(props) {
               >
                 Terms And Condition
               </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="/about"
-                className={classes.block}
-              >
-                About Us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="/contact"
-                className={classes.block}
-              >
-                Contact Us
-              </a>
-            </ListItem>
-          </List>
+            </GridItem>
+
+          </GridContainer>
         </div>
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} , made with{" "}

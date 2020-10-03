@@ -12,23 +12,19 @@ import GridItem from "../../../components/Grid/GridItem.js";
 import CustomInput from "../../../components/CustomInput/CustomInput.js";
 import Button from "../../../components/CustomButtons/Button.js";
 
-import styles from "../../../assets/js/views/landingPageSections/workStyle.js";
+import styles from "../../../assets/js/views/contactPageSections/contactStyle";
 
 const useStyles = makeStyles(styles);
 
 export default function ContactSection() {
   const classes = useStyles();
   return (
-    <div className={classes.section} style={{
-      backgroundImage: "url(" + require('../../../assets/img/bg.jpg') + ")",
-      backgroundPosition: "center center",
-      backgroundSize: "cover"
-    }}>
+    <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={8} sm={8} md={8}>
           <h2 className={classes.title}>Contact us Today</h2>
           <h4 className={classes.description}>
-            Let's get started on your applications
+            Let's get started on your project
           </h4>
           <form>
             <GridContainer>

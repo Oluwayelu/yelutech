@@ -103,14 +103,17 @@ const defaultFont = {
 };
 
 //const primaryColor = "#9c27b0";
-const primaryColor = "#007bff";
+const primaryColor = "#007baa";
+const secondaryColor = '#e91e63';
+const tertiaryColor = "#999999";
 const warningColor = "#ff9800";
 const dangerColor = "#f44336";
 const successColor = "#4caf50";
 const infoColor = "#00acc1";
 const roseColor = "#e91e63";
 const grayColor = "#999999";
-const blackColor = "#000";
+const blackColor = "#000000";
+const whiteColor = "#FFFFFF"
 
 const primaryBoxShadow = {
   boxShadow:
@@ -191,7 +194,7 @@ const defaultBoxShadow = {
 };
 
 const title = {
-  color: "#3C4858",
+  color: primaryColor,
   margin: "1.75rem 0 0.875rem",
   textDecoration: "none",
   fontWeight: "700",
@@ -225,6 +228,8 @@ export {
   card,
   defaultFont,
   primaryColor,
+  secondaryColor,
+  tertiaryColor,
   warningColor,
   dangerColor,
   successColor,
@@ -232,6 +237,7 @@ export {
   roseColor,
   grayColor,
   blackColor,
+  whiteColor,
   primaryBoxShadow,
   infoBoxShadow,
   successBoxShadow,

@@ -1,6 +1,6 @@
 import React from "react";
 // @material-ui/core components
-//import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
 import Carousel from "react-slick"
@@ -9,7 +9,7 @@ import Carousel from "react-slick"
 import Button from "../../../components/CustomButtons/Button"
 import GridItem from "../../../components/Grid/GridItem.js";
 
-//import styles from "../../../assets/js/views/landingPageSections/workStyle.js";
+import styles from "../../../assets/js/views/blogPageSection/blogDescriptionStyle";
 
 import Card from "../../../components/Card/Card"
 import CardBody from "../../../components/Card/CardBody"
@@ -17,10 +17,10 @@ import CardHeader from "../../../components/Card/CardHeader"
 import CardFooter from "../../../components/Card/CardFooter"
 import CardAvatar from "../../../components/Card/CardAvatar.js";
 
-//const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles);
 
 export default function BlogDescriptionSection(props) {
-  //const classes = useStyles();
+  const classes = useStyles();
   const settings = {
     dots: false,
     infinite: true,
@@ -39,19 +39,15 @@ export default function BlogDescriptionSection(props) {
             {images.map((image, key) => {
               return (
                 <CardAvatar plain>
-                  <img src={image} style={{
-                    width: '80%',
-                    height: "300px",
-                    borderRadius: "6px"
-                  }} alt="imgdata" />
+                  <img src={image} className={classes.image} alt="imgdata" />
                 </CardAvatar>
               )
             })}
           </Carousel>
-          <h3>{title}</h3>
+          <h3 className={classes.title}>{title}</h3>
         </CardHeader>
         <CardBody>
-          <p>
+          <p className={classes.description}>
             {description}
           </p>
         </CardBody>

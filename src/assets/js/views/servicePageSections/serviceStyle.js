@@ -1,6 +1,6 @@
-import { secondaryColor, title } from "../../styles";
+import { title, secondaryColor } from "../../styles";
 
-const productStyle = {
+const serviceStyle = {
   section: {
     padding: "70px 0",
     textAlign: "center"
@@ -17,4 +17,4 @@ const productStyle = {
   }
 };
 
-export default productStyle;
+export default serviceStyle;

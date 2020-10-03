@@ -25,10 +25,10 @@ const BlogPage = (props) => {
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "warning"
+          color: "dark"
         }}
       />
-      <Parallax filter small image={require("../../assets/img/bg2.jpg")}>
+      <Parallax filter small>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>

@@ -2,7 +2,8 @@ import {
   primaryColor,
   dangerColor,
   successColor,
-  defaultFont
+  defaultFont,
+  whiteColor
 } from "../styles"
 
 const customInputStyle = {
@@ -32,15 +33,15 @@ const customInputStyle = {
   },
   whiteUnderline: {
     "&:hover:not($disabled):before,&:before": {
-      borderColor: "#FFFFFF"
+      borderColor: whiteColor
     },
     "&:after": {
-      borderColor: "#FFFFFF"
+      borderColor: whiteColor
     }
   },
   labelRoot: {
     ...defaultFont,
-    color: "#AAAAAA !important",
+    color: primaryColor + " !important",
     fontWeight: "400",
     fontSize: "14px",
     lineHeight: "1.42857",
@@ -65,7 +66,7 @@ const customInputStyle = {
     }
   },
   input: {
-    color: "#495057",
+    color: primaryColor,
     height: "unset",
     "&,&::placeholder": {
       fontSize: "14px",

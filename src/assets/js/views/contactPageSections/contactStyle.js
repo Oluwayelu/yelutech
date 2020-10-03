@@ -1,9 +1,8 @@
-import { grayColor, secondaryColor, title } from "../../styles";
+import { secondaryColor, title } from "../../styles";
 
-const workStyle = {
+const contactStyle = {
   section: {
-    padding: "20px 0",
-    backgroundColor: grayColor
+    padding: "70px 0"
   },
   title: {
     ...title,
@@ -26,4 +25,4 @@ const workStyle = {
   }
 };
 
-export default workStyle;
+export default contactStyle;

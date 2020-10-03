@@ -25,10 +25,10 @@ const ServicesPage = (props) => {
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "primary"
+          color: "dark"
         }}
       />
-      <Parallax filter image={require("../../assets/img/bg4.jpg")}>
+      <Parallax filter small>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -43,7 +43,9 @@ const ServicesPage = (props) => {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <ServiceSection />
+        <div className={classes.container}>
+          <ServiceSection />
+        </div>
       </div>
       <Footer />
     </div>

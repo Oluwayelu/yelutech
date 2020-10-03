@@ -25,10 +25,10 @@ const ContactPage = (props) => {
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "primary"
+          color: "dark"
         }}
       />
-      <Parallax filter image={require("../../assets/img/bg3.jpg")}>
+      <Parallax filter small>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>

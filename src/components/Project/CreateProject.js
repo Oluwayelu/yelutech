@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { InputAdornment, MenuItem } from '@material-ui/core'
 // @material-ui/icons
-import { Email, People } from '@material-ui/icons'
+import { Email, People, Phone } from '@material-ui/icons'
 
 // core components
 import GridContainer from "../Grid/GridContainer.js";
@@ -25,7 +25,11 @@ export default function CreateProject() {
     <div  >
       <GridContainer justify="center">
         <GridItem xs={8} sm={8} md={8}>
-          <h2 className={classes.title}>Create a new Project</h2>
+          <h2 className={classes.title}>Let's discuss about your project</h2>
+          <h5 className={classes.description}>
+            Give a brief information about your project,
+            and we will contact you shortly
+          </h5>
           <form>
             <GridContainer>
               <GridItem xs={12} md={6}>
@@ -64,7 +68,24 @@ export default function CreateProject() {
                   }}
                 />
               </GridItem>
-
+              <GridItem xs={12} md={6}>
+                <CustomInput
+                  labelText="Enter your Phone number"
+                  inputProps={{
+                    type: "text",
+                    placeholder: "+234 0901 234 5678",
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <Phone className={classes.inputIconsColor} />
+                      </InputAdornment>
+                    )
+                  }}
+                  id="phone"
+                  formControlProps={{
+                    fullWidth: true
+                  }}
+                />
+              </GridItem>
               <GridItem xs={12}>
                 <CustomSelect
                   labelText="Services Needed"

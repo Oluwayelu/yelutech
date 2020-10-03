@@ -13,7 +13,7 @@ import InfoArea from "../../../components/InfoArea/InfoArea.js";
 import Modal from "../../../components/Modal/Modal"
 import CreateProject from '../../../components/Project/CreateProject'
 
-import styles from "../../../assets/js/views/landingPageSections/productStyle";
+import styles from "../../../assets/js/views/servicePageSections/serviceStyle";
 
 const useStyles = makeStyles(styles);
 

@@ -1,9 +1,8 @@
-import { grayColor, secondaryColor, title } from "../../styles";
+import { grayColor, title } from "../../styles";
 
-const workStyle = {
+const aboutStyle = {
   section: {
-    padding: "20px 0",
-    backgroundColor: grayColor
+    padding: "70px 0"
   },
   title: {
     ...title,
@@ -14,7 +13,7 @@ const workStyle = {
     textAlign: "center"
   },
   description: {
-    color: secondaryColor,
+    color: grayColor,
     textAlign: "center"
   },
   textCenter: {
@@ -26,4 +25,4 @@ const workStyle = {
   }
 };
 
-export default workStyle;
+export default aboutStyle;

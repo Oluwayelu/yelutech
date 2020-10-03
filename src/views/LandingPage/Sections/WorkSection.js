@@ -19,16 +19,12 @@ const useStyles = makeStyles(styles);
 export default function WorkSection() {
   const classes = useStyles();
   return (
-    <div className={classes.section} style={{
-      backgroundImage: "url(" + require('../../../assets/img/bg.jpg') + ")",
-      backgroundPosition: "center center",
-      backgroundSize: "cover"
-    }}>
+    <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={8} sm={8} md={8}>
           <h2 className={classes.title}>Contact us Today</h2>
           <h4 className={classes.description}>
-            Let's get started on your applications
+            Let's get started on your project
           </h4>
           <form>
             <GridContainer>

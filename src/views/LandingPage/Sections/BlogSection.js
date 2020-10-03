@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { makeStyles } from "@material-ui/core/styles";
-import styles from '../../../assets/js/views/landingPageSections/blogSection'
+import styles from '../../../assets/js/views/landingPageSections/blogStyle'
 
 import GridItem from '../../../components/Grid/GridItem'
 import GridContainer from '../../../components/Grid/GridContainer'
@@ -16,7 +16,7 @@ const useStyles = makeStyles(styles)
 const LandingPage = (props) => {
   const classes = useStyles()
   return (
-    <div >
+    <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Get Latest Information</h2>
@@ -44,7 +44,6 @@ const LandingPage = (props) => {
         </GridContainer>
       </div>
     </div>
-
   )
 }
 

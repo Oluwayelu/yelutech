@@ -36,10 +36,10 @@ const LandingPage = (props) => {
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "primary"
+          color: "dark"
         }}
       />
-      <Parallax filter image={require("../../assets/img/landing-bg.jpg")}>
+      <Parallax filter>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -56,7 +56,7 @@ const LandingPage = (props) => {
                 rel="noopener noreferrer"
                 onClick={() => setOpenModal(true)}
               >
-                Let's Get Started
+                Start new Project
               </Button>
             </GridItem>
           </GridContainer>
@@ -74,11 +74,14 @@ const LandingPage = (props) => {
         <div className={classes.container}>
           <ProductSection />
         </div>
-        <GridContainer>
-          <GridItem md={6}>
-            <TestimoniesSection />
-          </GridItem>
-        </GridContainer>
+        <div className={classes.secondary}>
+          <GridContainer>
+            <GridItem md={6}>
+              <TestimoniesSection />
+            </GridItem>
+          </GridContainer>
+        </div>
+
         <BlogSection />
         <WorkSection />
       </div>

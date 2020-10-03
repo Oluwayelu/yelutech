@@ -1,8 +1,8 @@
-import { container, primaryColor, dangerColor } from "../styles";
+import { container, primaryColor, dangerColor, whiteColor, blackColor } from "../styles";
 
 const footerStyle = {
   block: {
-    color: "inherit",
+    color: primaryColor,
     padding: "0.9375rem",
     fontWeight: "500",
     fontSize: "12px",
@@ -13,20 +13,21 @@ const footerStyle = {
     display: "block"
   },
   left: {
-    float: "left!important",
+    float: "left !important",
     display: "block"
   },
   right: {
     padding: "15px 0",
     margin: "0",
-    float: "right!important"
+    float: "right !important"
   },
   footer: {
-    padding: "0.9375rem 0",
+    padding: "240px 0 0",
     textAlign: "center",
     display: "flex",
     zIndex: "2",
-    position: "relative"
+    position: "relative",
+    backgroundColor: blackColor
   },
   a: {
     color: primaryColor,
@@ -35,7 +36,7 @@ const footerStyle = {
   },
   footerWhiteFont: {
     "&,&:hover,&:focus": {
-      color: "#FFFFFF"
+      color: whiteColor
     }
   },
   container,

@@ -35,7 +35,7 @@ function App() {
   return (
     <Provider store={store} >
       <Router history={hist}>
-        <div style={{ backgroundColor: "#CCC" }}>
+        <div style={{ backgroundColor: "#999999" }}>
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <Switch>
