@@ -10,6 +10,7 @@ import GridContainer from '../../components/Grid/GridContainer'
 import GridItem from '../../components/Grid/GridItem'
 import NavRightLinks from '../../components/Header/Navbar/NavRightLink';
 import Footer from '../../components/Footer/Footer';
+import AboutSection from './Sections/AboutSection';
 const useStyles = makeStyles(styles)
 const AboutPage = (props) => {
   const classes = useStyles()
@@ -33,9 +34,7 @@ const AboutPage = (props) => {
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>About Us</h1>
               <h4>
-                Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh
-                {"'"}t h f k fk n  f ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg
-                bng;kb gk;bgkb g ;bg.
+                A brief description about who we are as a Company
               </h4>
               <br />
             </GridItem>
@@ -44,9 +43,7 @@ const AboutPage = (props) => {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
-
-        </div>
+        <AboutSection />
       </div>
       <Footer />
     </div>

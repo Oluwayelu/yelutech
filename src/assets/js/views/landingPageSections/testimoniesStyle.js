@@ -1,7 +1,7 @@
 import { cardTitle, title, container } from "../../styles";
 import imagesStyle from "../../imagesStyles";
 
-const teamStyle = {
+const testimoniesStyle = {
   container: {
     zIndex: "12",
     color: "#FFFFFF",
@@ -9,7 +9,7 @@ const teamStyle = {
   },
   section: {
     width: '100%',
-    padding: "70px 0",
+    padding: "5px",
     textAlign: "center"
   },
   title: {
@@ -54,4 +54,4 @@ const teamStyle = {
   }
 };
 
-export default teamStyle;
+export default testimoniesStyle;

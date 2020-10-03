@@ -33,38 +33,51 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.yelutech.com"
+                href="/"
                 className={classes.block}
-                target="_blank"
               >
                 YeLu Tech
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.yelutech.com/about"
+                href="/blog"
                 className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.yelutech.com"
-                className={classes.block}
-                target="_blank"
               >
                 Blog
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.yelutech.com/license"
+                href="/license"
+                className={classes.block}
+              >
+                Licenses
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="/terms&condition"
                 className={classes.block}
                 target="_blank"
               >
-                Licenses
+                Terms And Condition
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="/about"
+                className={classes.block}
+              >
+                About Us
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="/contact"
+                className={classes.block}
+              >
+                Contact Us
               </a>
             </ListItem>
           </List>
@@ -73,9 +86,8 @@ export default function Footer(props) {
           &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="https://www.yelutech.com"
+            href="/"
             className={aClasses}
-            target="_blank"
           >
             YeLu Tech
           </a>

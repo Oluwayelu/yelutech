@@ -10,6 +10,7 @@ import GridContainer from '../../components/Grid/GridContainer'
 import GridItem from '../../components/Grid/GridItem'
 import NavRightLinks from '../../components/Header/Navbar/NavRightLink';
 import Footer from '../../components/Footer/Footer';
+import ContactSection from './Sections/ContactSection';
 const useStyles = makeStyles(styles)
 const ContactPage = (props) => {
   const classes = useStyles()
@@ -32,11 +33,6 @@ const ContactPage = (props) => {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>Contact Us</h1>
-              <h4>
-                Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh
-                {"'"}t h f k fk n  f ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg
-                bng;kb gk;bgkb g ;bg.
-              </h4>
               <br />
             </GridItem>
           </GridContainer>
@@ -44,7 +40,7 @@ const ContactPage = (props) => {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-
+        <ContactSection />
       </div>
       <Footer />
     </div>

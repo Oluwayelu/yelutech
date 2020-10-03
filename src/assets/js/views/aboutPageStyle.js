@@ -21,7 +21,7 @@ const aboutPageStyle = {
     margin: "10px auto 0"
   },
   main: {
-    background: "#FFFFFF",
+    background: "#CCC",
     position: "relative",
     zIndex: "3"
   },

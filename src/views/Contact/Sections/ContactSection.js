@@ -16,7 +16,7 @@ import styles from "../../../assets/js/views/landingPageSections/workStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function WorkSection() {
+export default function ContactSection() {
   const classes = useStyles();
   return (
     <div className={classes.section} style={{
@@ -25,7 +25,7 @@ export default function WorkSection() {
       backgroundSize: "cover"
     }}>
       <GridContainer justify="center">
-        <GridItem xs={8} sm={8} md={8}>
+        <GridItem cs={8} sm={8} md={8}>
           <h2 className={classes.title}>Contact us Today</h2>
           <h4 className={classes.description}>
             Let's get started on your applications

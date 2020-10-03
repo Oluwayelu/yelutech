@@ -10,6 +10,7 @@ import GridContainer from '../../components/Grid/GridContainer'
 import GridItem from '../../components/Grid/GridItem'
 import NavRightLinks from '../../components/Header/Navbar/NavRightLink';
 import Footer from '../../components/Footer/Footer';
+import BlogSection from './Sections/BlogSection';
 const useStyles = makeStyles(styles)
 const BlogPage = (props) => {
   const classes = useStyles()
@@ -24,18 +25,16 @@ const BlogPage = (props) => {
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "primary"
+          color: "warning"
         }}
       />
-      <Parallax filter image={require("../../assets/img/bg2.jpg")}>
+      <Parallax filter small image={require("../../assets/img/bg2.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>Welcome to Our Blog</h1>
               <h4>
-                Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh
-                {"'"}t h f k fk n  f ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg
-                bng;kb gk;bgkb g ;bg.
+                Get Quality Information about the Latest Technological Improvements in the World
               </h4>
               <br />
             </GridItem>
@@ -44,7 +43,7 @@ const BlogPage = (props) => {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-
+        <BlogSection />
       </div>
       <Footer />
     </div>

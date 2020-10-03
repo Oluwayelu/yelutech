@@ -10,6 +10,7 @@ import GridContainer from '../../components/Grid/GridContainer'
 import GridItem from '../../components/Grid/GridItem'
 import NavRightLinks from '../../components/Header/Navbar/NavRightLink';
 import Footer from '../../components/Footer/Footer';
+import ServiceSection from './Sections/ServiceSection';
 const useStyles = makeStyles(styles)
 const ServicesPage = (props) => {
   const classes = useStyles()
@@ -33,9 +34,7 @@ const ServicesPage = (props) => {
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>Services we Provide</h1>
               <h4>
-                Lorem ipsum dfggd hv dhf hbhf fkhbkf kbfd ffkhf kh kfh fhbbf fb fh
-                {"'"}t h f k fk n  f ffhff k f f f f   fjbfjbjfb  kjk lg g h hknk;yg
-                bng;kb gk;bgkb g ;bg.
+                We have a lot to Offer you and your Company
               </h4>
               <br />
             </GridItem>
@@ -44,7 +43,7 @@ const ServicesPage = (props) => {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-
+        <ServiceSection />
       </div>
       <Footer />
     </div>
