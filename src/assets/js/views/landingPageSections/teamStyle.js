@@ -1,7 +1,12 @@
-import { cardTitle, title } from "../../styles";
+import { cardTitle, title, container } from "../../styles";
 import imagesStyle from "../../imagesStyles";
 
 const teamStyle = {
+  container: {
+    zIndex: "12",
+    color: "#FFFFFF",
+    ...container
+  },
   section: {
     width: '100%',
     padding: "70px 0",
@@ -9,6 +14,7 @@ const teamStyle = {
   },
   title: {
     ...title,
+    color: "#fff",
     marginBottom: "1rem",
     marginTop: "30px",
     minHeight: "32px",
@@ -19,12 +25,15 @@ const teamStyle = {
     marginLeft: "auto",
     marginRight: "auto"
   },
-  cardTitle,
+  cardTitle: {
+    ...cardTitle,
+    color: "#ddd"
+  },
   smallTitle: {
-    color: "#6c757d"
+    color: "#aaa"
   },
   description: {
-    color: "#999"
+    color: "#ccc"
   },
   justifyCenter: {
     justifyContent: "center !important"

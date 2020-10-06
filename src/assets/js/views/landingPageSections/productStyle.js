@@ -1,4 +1,4 @@
-import { title } from "../../styles";
+import { secondaryColor, title } from "../../styles";
 
 const productStyle = {
   section: {
@@ -13,7 +13,7 @@ const productStyle = {
     textDecoration: "none"
   },
   description: {
-    color: "#999"
+    color: secondaryColor
   }
 };
 

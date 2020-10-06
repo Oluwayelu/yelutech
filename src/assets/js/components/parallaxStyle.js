@@ -1,3 +1,5 @@
+import { blackColor } from "../styles";
+
 const parallaxStyle = {
   parallax: {
     height: "90vh",
@@ -14,7 +16,7 @@ const parallaxStyle = {
   },
   filter: {
     "&:before": {
-      background: "rgba(0, 0, 0, 0.5)"
+      background: blackColor
     },
     "&:after,&:before": {
       position: "absolute",

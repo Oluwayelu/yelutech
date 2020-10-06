@@ -1,4 +1,4 @@
-import { defaultFont } from "../styles";
+import { defaultFont, grayColor, infoColor, primaryColor, secondaryColor } from "../styles";
 
 import tooltip from "./tooltipsStyle";
 
@@ -15,7 +15,7 @@ const headerLinksStyle = theme => ({
   },
   listItem: {
     float: "left",
-    color: "inherit",
+    color: primaryColor,
     position: "relative",
     display: "block",
     width: "auto",
@@ -37,7 +37,7 @@ const headerLinksStyle = theme => ({
     padding: "0 !important"
   },
   navLink: {
-    color: "inherit",
+    color: primaryColor,
     position: "relative",
     padding: "0.9375rem",
     fontWeight: "400",
@@ -50,7 +50,7 @@ const headerLinksStyle = theme => ({
     display: "inline-flex",
     "&:hover,&:focus": {
       color: "inherit",
-      background: "rgba(200, 200, 200, 0.2)"
+      background: grayColor
     },
     [theme.breakpoints.down("sm")]: {
       width: "calc(100% - 30px)",
@@ -64,7 +64,7 @@ const headerLinksStyle = theme => ({
     }
   },
   notificationNavLink: {
-    color: "inherit",
+    color: infoColor,
     padding: "0.9375rem",
     fontWeight: "400",
     fontSize: "12px",
@@ -93,16 +93,18 @@ const headerLinksStyle = theme => ({
   icons: {
     width: "20px",
     height: "20px",
+    color: "inherit",
     marginRight: "3px"
   },
   socialIcons: {
+    color: "inherit",
     position: "relative",
     fontSize: "20px !important",
     marginRight: "4px"
   },
   dropdownLink: {
     "&,&:hover,&:focus": {
-      color: "inherit",
+      color: secondaryColor,
       textDecoration: "none",
       display: "block",
       padding: "10px 20px"

@@ -3,12 +3,23 @@ import {
   CssBaseline,
 } from '@material-ui/core'
 import { Provider } from 'react-redux';
+import { Router, Route, Switch } from 'react-router-dom'
 import { ThemeProvider } from '@material-ui/styles'
 import { createMuiTheme } from '@material-ui/core/styles'
-//import { createBrowserHistory } from 'history'
+import { createBrowserHistory } from 'history'
 
 import store from './store'
 import LandingPage from './views/LandingPage/LandingPage';
+import AboutPage from './views/About/AboutPage';
+import ContactPage from './views/Contact/ContactPage';
+import ServicesPage from './views/Services/ServicesPage';
+import BlogPage from './views/Blog/BlogPage';
+
+import 'react-datetime/css/react-datetime.css'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import BlogDetail from './views/Blog/BlogDetail';
+import TermsAndCondPage from './views/TermsAndCondition/Terms'
 
 const theme = createMuiTheme({
   palette: {
@@ -20,15 +31,27 @@ const theme = createMuiTheme({
   }
 })
 
-//const hist = createBrowserHistory()
+const hist = createBrowserHistory()
 
 function App() {
   return (
     <Provider store={store} >
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <LandingPage />
-      </ThemeProvider>
+      <Router history={hist}>
+        <div style={{ backgroundColor: "#999999" }}>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <Switch>
+              <Route exact path="/" component={LandingPage} />
+              <Route exact path="/about" component={AboutPage} />
+              <Route exact path="/blog" component={BlogPage} />
+              <Route exact path="/blog/:id" component={BlogDetail} />
+              <Route exact path="/services" component={ServicesPage} />
+              <Route exact path="/contact" component={ContactPage} />
+              <Route exact path="/terms&condition" component={TermsAndCondPage} />
+            </Switch>
+          </ThemeProvider>
+        </div>
+      </Router>
     </Provider>
   );
 }

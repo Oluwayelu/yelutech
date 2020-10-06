@@ -6,7 +6,8 @@ import {
   infoColor,
   roseColor,
   grayColor,
-  title
+  title,
+  tertiaryColor
 } from "../styles";
 
 const infoStyle = {
@@ -51,7 +52,7 @@ const infoStyle = {
   },
   title,
   description: {
-    color: grayColor,
+    color: tertiaryColor,
     overflow: "hidden",
     marginTop: "0px",
     fontSize: "14px"

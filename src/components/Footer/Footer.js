@@ -12,6 +12,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Favorite from "@material-ui/icons/Favorite";
 
 import styles from "../../assets/js/components/footerStyle";
+import GridContainer from "../Grid/GridContainer";
+import GridItem from "../Grid/GridItem";
 
 const useStyles = makeStyles(styles);
 
@@ -30,52 +32,65 @@ export default function Footer(props) {
     <footer className={footerClasses}>
       <div className={classes.container}>
         <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
+          <GridContainer className={classes.list}>
+            <GridItem xs={12} sm={12} md={12} className={classes.inlineBlock}>
               <a
-                href="https://www.yelutech.com"
+                href="/"
                 className={classes.block}
-                target="_blank"
               >
                 YeLu Tech
               </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
+            </GridItem>
+            <GridItem xs={3} className={classes.inlineBlock}>
               <a
-                href="https://www.yelutech.com/about"
+                href="/about"
                 className={classes.block}
-                target="_blank"
               >
-                About us
+                About Us
               </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
+            </GridItem>
+            <GridItem xs={3} className={classes.inlineBlock}>
               <a
-                href="http://blog.yelutech.com"
+                href="/contact"
                 className={classes.block}
-                target="_blank"
+              >
+                Contact Us
+              </a>
+            </GridItem>
+            <GridItem xs={3} className={classes.inlineBlock}>
+              <a
+                href="/blog"
+                className={classes.block}
               >
                 Blog
               </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
+            </GridItem>
+            <GridItem xs={3} className={classes.inlineBlock}>
               <a
-                href="https://www.yelutech.com/license"
+                href="/license"
                 className={classes.block}
-                target="_blank"
               >
                 Licenses
               </a>
-            </ListItem>
-          </List>
+            </GridItem>
+            <GridItem xs={3} className={classes.inlineBlock}>
+              <a
+                href="/terms&condition"
+                className={classes.block}
+                target="_blank"
+              >
+                Terms And Condition
+              </a>
+            </GridItem>
+
+          </GridContainer>
         </div>
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="https://www.yelutech.com"
+            href="/"
             className={aClasses}
-            target="_blank"
           >
             YeLu Tech
           </a>

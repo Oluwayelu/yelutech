@@ -1,8 +1,8 @@
-import { title } from "../../styles";
+import { secondaryColor, primaryColor, title } from "../../styles";
 
 const workStyle = {
   section: {
-    padding: "70px 0"
+    padding: "20px 0",
   },
   title: {
     ...title,
@@ -13,7 +13,7 @@ const workStyle = {
     textAlign: "center"
   },
   description: {
-    color: "#999",
+    color: secondaryColor,
     textAlign: "center"
   },
   textCenter: {
@@ -22,6 +22,9 @@ const workStyle = {
   textArea: {
     marginRight: "15px",
     marginLeft: "15px"
+  },
+  icon: {
+    color: primaryColor
   }
 };
 
