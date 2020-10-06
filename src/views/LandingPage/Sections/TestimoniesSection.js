@@ -38,11 +38,7 @@ export default function TestimoniesSection() {
     autoplay: true
   };
   return (
-    <div className={classes.section} style={{
-      backgroundImage: "url(" + require('../../../assets/img/bg5.jpg') + ")",
-      backgroundPosition: "center center",
-      backgroundSize: "cover"
-    }}>
+    <div className={classes.section} >
       <h2 className={classes.title}>Some Testimonies of our Clients</h2>
       <div>
         <GridContainer>

@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import classNames from 'classnames'
+import { connect } from 'react-redux';
 
 import { makeStyles } from "@material-ui/core/styles";
 import styles from '../../assets/js/views/blogPageStyle'
@@ -11,9 +12,19 @@ import GridItem from '../../components/Grid/GridItem'
 import NavRightLinks from '../../components/Header/Navbar/NavRightLink';
 import Footer from '../../components/Footer/Footer';
 import BlogSection from './Sections/BlogSection';
+
+import { getBlogData } from '../../_actions/actions'
 const useStyles = makeStyles(styles)
-const BlogPage = (props) => {
+const BlogPage = ({
+  match,
+  blogData,
+  getBlogData
+}) => {
   const classes = useStyles()
+  useEffect(() => {
+    getBlogData(match.params.id)
+  }, [])
+  console.log(blogData)
   return (
     <div>
       <Navbar
@@ -28,7 +39,7 @@ const BlogPage = (props) => {
           color: "dark"
         }}
       />
-      <Parallax filter small>
+      <Parallax filter image>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -50,4 +61,7 @@ const BlogPage = (props) => {
   )
 }
 
-export default BlogPage
+const mapStateToProps = state => ({
+  blogData: state.data.blogData
+})
+export default connect(mapStateToProps, { getBlogData })(BlogPage)

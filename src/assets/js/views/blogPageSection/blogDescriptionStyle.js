@@ -19,7 +19,7 @@ const blogDescriptionStyle = {
     textAlign: "center"
   },
   image: {
-    width: '80%',
+    width: '100%',
     height: "300px",
     borderRadius: "6px"
   }

@@ -78,7 +78,7 @@ export default function WorkSection() {
                 <GridItem >
                   <div>
                     <Button justIcon simple>
-                      <Email style={{ color: "#ccf122" }} />
+                      <Email className={classes.icon} />
                     </Button>
                     team@yelutech.com
                   </div>
@@ -86,7 +86,7 @@ export default function WorkSection() {
                 <GridItem >
                   <div>
                     <Button justIcon simple>
-                      <Call style={{ color: "#007bff" }} />
+                      <Call className={classes.icon} />
                     </Button>
                     +234-0905-315-6229
                   </div>
@@ -94,7 +94,7 @@ export default function WorkSection() {
                 <GridItem >
                   <div>
                     <Button justIcon simple>
-                      <LocationOn style={{ color: "#cfcfcf" }} />
+                      <LocationOn className={classes.icon} />
                     </Button>
                     Unilag, Akoka, Lagos State, Nigeria.
                   </div>
@@ -102,13 +102,13 @@ export default function WorkSection() {
                 <h4 className={classes.description}>Follow us on </h4>
                 <GridItem >
                   <Button justIcon simple>
-                    <FaTwitter />
+                    <FaTwitter className={classes.icon} />
                   </Button>
                   <Button justIcon simple>
-                    <FaInstagram />
+                    <FaInstagram className={classes.icon} />
                   </Button>
                   <Button justIcon simple>
-                    <FaFacebook />
+                    <FaFacebook className={classes.icon} />
                   </Button>
                 </GridItem>
               </GridItem>

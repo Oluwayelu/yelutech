@@ -2,7 +2,7 @@ import { container, primaryColor, dangerColor, whiteColor, blackColor } from "..
 
 const footerStyle = {
   block: {
-    color: primaryColor,
+    color: 'inherit',
     padding: "0.9375rem",
     fontWeight: "500",
     fontSize: "12px",
@@ -27,6 +27,7 @@ const footerStyle = {
     display: "flex",
     zIndex: "2",
     position: "relative",
+    color: primaryColor,
     backgroundColor: blackColor
   },
   a: {

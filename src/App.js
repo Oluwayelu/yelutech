@@ -18,6 +18,8 @@ import BlogPage from './views/Blog/BlogPage';
 import 'react-datetime/css/react-datetime.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import BlogDetail from './views/Blog/BlogDetail';
+import TermsAndCondPage from './views/TermsAndCondition/Terms'
 
 const theme = createMuiTheme({
   palette: {
@@ -42,8 +44,10 @@ function App() {
               <Route exact path="/" component={LandingPage} />
               <Route exact path="/about" component={AboutPage} />
               <Route exact path="/blog" component={BlogPage} />
+              <Route exact path="/blog/:id" component={BlogDetail} />
               <Route exact path="/services" component={ServicesPage} />
               <Route exact path="/contact" component={ContactPage} />
+              <Route exact path="/terms&condition" component={TermsAndCondPage} />
             </Switch>
           </ThemeProvider>
         </div>

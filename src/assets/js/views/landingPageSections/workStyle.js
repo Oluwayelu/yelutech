@@ -1,9 +1,8 @@
-import { grayColor, secondaryColor, title } from "../../styles";
+import { secondaryColor, primaryColor, title } from "../../styles";
 
 const workStyle = {
   section: {
     padding: "20px 0",
-    backgroundColor: grayColor
   },
   title: {
     ...title,
@@ -23,6 +22,9 @@ const workStyle = {
   textArea: {
     marginRight: "15px",
     marginLeft: "15px"
+  },
+  icon: {
+    color: primaryColor
   }
 };
 

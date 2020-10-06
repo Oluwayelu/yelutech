@@ -63,7 +63,6 @@ const LandingPage = (props) => {
         </div>
       </Parallax>
       <Modal
-        title="Create your Project"
         content={(
           <CreateProject />
         )}

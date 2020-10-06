@@ -1,2 +1,11 @@
 
 export const SAMPLE_ACTION_TYPE = 'SAMPLE_ACTION_TYPE'
+
+export const GET_BLOGS = 'GET_BLOGS'
+export const GET_BLOG_DATA = 'GET_BLOG_DATA'
+export const CREATE_PROJECT = 'CREATE_PROJECT'
+export const SEND_MESSAGE = 'SEND_MESSAGE'
+
+export const GET_ERRORS = 'GET_ERRORS';
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';
+

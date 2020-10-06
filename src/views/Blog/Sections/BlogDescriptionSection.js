@@ -3,7 +3,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Carousel from "react-slick"
 
 // core components
 import Button from "../../../components/CustomButtons/Button"
@@ -21,29 +20,14 @@ const useStyles = makeStyles(styles);
 
 export default function BlogDescriptionSection(props) {
   const classes = useStyles();
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true
-  };
   const { id, title, images, description } = props
-  console.log(props)
   return (
     <GridItem xs={12} md={4}>
       <Card plain>
         <CardHeader>
-          <Carousel {...settings}>
-            {images.map((image, key) => {
-              return (
-                <CardAvatar plain>
-                  <img src={image} className={classes.image} alt="imgdata" />
-                </CardAvatar>
-              )
-            })}
-          </Carousel>
+          <CardAvatar plain>
+            <img key={id} src={`/api/v1/${images}`} className={classes.image} alt="imgdata" />
+          </CardAvatar>
           <h3 className={classes.title}>{title}</h3>
         </CardHeader>
         <CardBody>
@@ -53,7 +37,7 @@ export default function BlogDescriptionSection(props) {
         </CardBody>
         <CardFooter>
           <Button
-            href={`/blog?id=${id}`}
+            href={`/blog/${id}`}
             color="primary"
           >
             Read more...
