@@ -1,5 +1,5 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
-const ENDPOINT = process.env.ENDPOINT
+const ENDPOINT = process.env.REACT_APP_ENDPOINT
 
 module.exports = function (app) {
   app.use(
