@@ -16,8 +16,6 @@ import CardHeader from "../../../components/Card/CardHeader"
 import CardFooter from "../../../components/Card/CardFooter"
 import CardAvatar from "../../../components/Card/CardAvatar.js";
 
-import { storage } from '../../../services/firebase'
-
 const useStyles = makeStyles(styles);
 
 export default function BlogDescriptionSection(props) {

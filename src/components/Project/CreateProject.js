@@ -18,10 +18,11 @@ import CustomSelect from '../CustomSelect/CustomSelect'
 import styles from "../../assets/js/components/Project/createProject";
 
 import serviceData from '../../variables/service'
+import { firestore } from '../../services/firebase'
 
 const useStyles = makeStyles(styles);
 
-export default function CreateProject() {
+export default function CreateProject(props) {
   const classes = useStyles();
 
   return (
@@ -60,7 +61,11 @@ export default function CreateProject() {
               { setStatus }
             ) => {
               setStatus()
-              console.log(values)
+              firestore.collection('projects').doc().set({
+                ...values,
+                date: firebase.firestore.Timestamp.now()
+              })
+              props.setOpen(false)
             }}
           >
             {({

@@ -1,30 +1,30 @@
 export default [
   {
-    value: 0,
+    value: 'Website Design',
     text: 'Website Design'
   },
   {
-    value: 1,
+    value: 'Website Development',
     text: 'Website Development'
   },
   {
-    value: 2,
+    value: 'Mobile app Development',
     text: 'Mobile app Development'
   },
   {
-    value: 3,
+    value: 'SEO',
     text: 'SEO'
   },
   {
-    value: 4,
+    value: 'Email Marketing',
     text: 'Email Marketing'
   },
   {
-    value: 5,
+    value: 'Social Media Management',
     text: 'Social Media Management'
   },
   {
-    value: 6,
+    value: 'Team training',
     text: 'Team training'
   }
 ]

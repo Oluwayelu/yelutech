@@ -64,7 +64,7 @@ const LandingPage = (props) => {
       </Parallax>
       <Modal
         content={(
-          <CreateProject />
+          <CreateProject setOpen={setOpenModal} />
         )}
         open={openModal}
         setOpen={setOpenModal}
