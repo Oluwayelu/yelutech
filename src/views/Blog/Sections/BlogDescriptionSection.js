@@ -16,17 +16,20 @@ import CardHeader from "../../../components/Card/CardHeader"
 import CardFooter from "../../../components/Card/CardFooter"
 import CardAvatar from "../../../components/Card/CardAvatar.js";
 
+import { storage } from '../../../services/firebase'
+
 const useStyles = makeStyles(styles);
 
 export default function BlogDescriptionSection(props) {
   const classes = useStyles();
   const { id, title, images, body } = props
+
   return (
     <GridItem xs={12} md={4}>
       <Card plain>
         <CardHeader>
           <CardAvatar plain>
-            <img key={id} src={`/api/v1/${images}`} className={classes.image} alt="imgdata" />
+            <img key={id} src={`https://firebasestorage.googleapis.com/v0/b/yelutech.appspot.com/o/Blog%2F440px-React-icon.svg.png?alt=media&token=dfffe2d8-eca7-46f0-a002-5b4298b3ead7`} className={classes.image} alt="imgdata" />
           </CardAvatar>
           <h3 className={classes.title}>{title}</h3>
         </CardHeader>

@@ -23,7 +23,6 @@ const BlogSection = () => {
     }
     fetchData()
   }, [blogData])
-  console.log(blogData)
   return (
     <div className={classes.section} >
       <GridContainer justify="center">
