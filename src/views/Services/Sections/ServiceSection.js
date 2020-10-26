@@ -107,7 +107,6 @@ export default function ServiceSection() {
         </GridContainer>
       </div>
       <Modal
-        title="Let's Get you started"
         content={(
           <CreateProject />
         )}

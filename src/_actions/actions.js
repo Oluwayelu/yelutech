@@ -1,34 +1,30 @@
 import axios from 'axios'
+import { firestore } from '../services/firebase'
 import { GET_BLOGS, GET_BLOG_DATA, GET_ERRORS } from './types'
 
 export const getBlogs = () => dispatch => {
 
-  axios
-    .get('/api/v1/blogs')
-    .then(res =>
+  firestore.collection('blogs').get()
+    .then(doc => {
+      const blogs = []
+      doc.forEach(data => {
+        var blogData = data.data()
+        blogs.push(blogData)
+      })
       dispatch({
         type: GET_BLOGS,
-        payload: res.data
-      }))
+        payload: blogs
+      })
+    })
     .catch(err =>
       dispatch({
         type: GET_ERRORS,
-        payload: err.response
-      }))
+        payload: err
+      })
+    )
 }
 
 export const getBlogData = (id) => dispatch => {
 
-  axios
-    .get(`/api/v1/blogs/${id}`)
-    .then(res =>
-      dispatch({
-        type: GET_BLOG_DATA,
-        payload: res.data
-      }))
-    .catch(err =>
-      dispatch({
-        type: GET_ERRORS,
-        payload: err.response
-      }))
+  console.log(id)
 }

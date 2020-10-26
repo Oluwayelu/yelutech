@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
-import { connect } from "react-redux";
+import React, { useEffect, useState } from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
 
-import { getBlogs } from '../../../_actions/actions'
 // core components
 import GridContainer from "../../../components/Grid/GridContainer.js";
 import GridItem from "../../../components/Grid/GridItem.js";
@@ -13,15 +11,19 @@ import GridItem from "../../../components/Grid/GridItem.js";
 import styles from "../../../assets/js/views/blogPageSection/blogStyle.js";
 
 import BlogDescriptionSection from './BlogDescriptionSection'
+import { firestore } from "../../../services/firebase";
 const useStyles = makeStyles(styles);
-const BlogSection = ({
-  blogs,
-  getBlogs
-}) => {
+const BlogSection = () => {
   const classes = useStyles();
+  const [blogData, setBlogData] = useState([])
   useEffect(() => {
-    getBlogs()
-  }, [getBlogs])
+    const fetchData = async () => {
+      const data = await firestore.collection('blogs').get()
+      setBlogData(data.docs.map(blog => ({ ...blog.data(), id: blog.id })))
+    }
+    fetchData()
+  }, [blogData])
+  console.log(blogData)
   return (
     <div className={classes.section} >
       <GridContainer justify="center">
@@ -34,19 +36,15 @@ const BlogSection = ({
       </GridContainer>
       <div>
         <GridContainer>
-          {blogs.map((data, key) => {
-            return (
-              <BlogDescriptionSection key={key} id={data._id} images={data.image} title={data.title} description={data.body} />
-            )
-          })}
+          {
+            blogData.map((blog, key) => {
+              return <BlogDescriptionSection key={key} id={blog.id} title={blog.title} body={blog.body} />
+            })
+          }
         </GridContainer>
       </div>
     </div>
   );
 }
 
-const mapStateToProps = state => ({
-  blogs: state.data.blogs
-})
-
-export default connect(mapStateToProps, { getBlogs })(BlogSection)
+export default BlogSection

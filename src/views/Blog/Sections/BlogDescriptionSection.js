@@ -20,7 +20,7 @@ const useStyles = makeStyles(styles);
 
 export default function BlogDescriptionSection(props) {
   const classes = useStyles();
-  const { id, title, images, description } = props
+  const { id, title, images, body } = props
   return (
     <GridItem xs={12} md={4}>
       <Card plain>
@@ -32,7 +32,7 @@ export default function BlogDescriptionSection(props) {
         </CardHeader>
         <CardBody>
           <p className={classes.description}>
-            {description}
+            {body}
           </p>
         </CardBody>
         <CardFooter>

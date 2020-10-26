@@ -14,7 +14,7 @@ import Footer from '../../components/Footer/Footer';
 
 import { getBlogData } from '../../_actions/actions'
 const useStyles = makeStyles(styles)
-const BlogPage = ({
+const BlogDetail = ({
   match,
   blogData,
   getBlogData
@@ -72,4 +72,4 @@ const BlogPage = ({
 const mapStateToProps = state => ({
   blogData: state.data.blogData
 })
-export default connect(mapStateToProps, { getBlogData })(BlogPage)
+export default connect(mapStateToProps, { getBlogData })(BlogDetail)

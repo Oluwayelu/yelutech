@@ -140,6 +140,23 @@ export default function CreateProject() {
                       />
                       {errors.phone && (<span className={classes.errors}>{errors.phone}</span>)}
                     </GridItem>
+                    <GridItem xs={12} md={6}>
+                      <CustomInput
+                        labelText="Proposed date for delivery"
+                        inputProps={{
+                          type: "date",
+                          value: values.date,
+                          onChange: handleChange,
+                          error: touched.date && Boolean(errors.date),
+                          placeholder: "Date"
+                        }}
+                        id="date"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                      />
+                      {errors.date && (<span className={classes.errors}>{errors.date}</span>)}
+                    </GridItem>
                     <GridItem xs={12}>
                       <CustomSelect
                         labelText="Services Needed"
@@ -161,23 +178,7 @@ export default function CreateProject() {
                       </CustomSelect>
                       {errors.service && (<span className={classes.errors}>{errors.service}</span>)}
                     </GridItem>
-                    <GridItem xs={12}>
-                      <CustomInput
-                        labelText="Proposed date for delivery"
-                        inputProps={{
-                          type: "date",
-                          value: values.date,
-                          onChange: handleChange,
-                          error: touched.date && Boolean(errors.date),
-                          placeholder: "Date"
-                        }}
-                        id="date"
-                        formControlProps={{
-                          fullWidth: true
-                        }}
-                      />
-                      {errors.date && (<span className={classes.errors}>{errors.date}</span>)}
-                    </GridItem>
+
                     <GridItem xs={12}>
                       <CustomInput
                         labelText="Description of Project"

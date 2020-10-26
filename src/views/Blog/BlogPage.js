@@ -12,7 +12,7 @@ import NavRightLinks from '../../components/Header/Navbar/NavRightLink';
 import Footer from '../../components/Footer/Footer';
 import BlogSection from './Sections/BlogSection';
 const useStyles = makeStyles(styles)
-const BlogPage = (props) => {
+const BlogPage = () => {
   const classes = useStyles()
   return (
     <div>
