@@ -1,8 +1,8 @@
-import { secondaryColor, title } from "../../styles";
+import { secondaryColor, primaryColor, title } from "../../styles";
 
 const contactStyle = {
   section: {
-    padding: "70px 0"
+    padding: "20px 0",
   },
   title: {
     ...title,
@@ -22,6 +22,9 @@ const contactStyle = {
   textArea: {
     marginRight: "15px",
     marginLeft: "15px"
+  },
+  icon: {
+    color: primaryColor
   }
 };
 

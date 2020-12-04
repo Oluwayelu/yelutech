@@ -5,6 +5,13 @@ import PropTypes from "prop-types";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
+import Card from "../Card/Card";
+import CardIcon from "../Card/CardIcon";
+import CardBody from "../Card/CardBody";
+import CardAvatar from "../Card/CardAvatar";
+import CardHeader from "../Card/CardHeader";
+import CardFooter from "../Card/CardFooter";
+
 import styles from "../../assets/js/components/infoStyle";
 
 const useStyles = makeStyles(styles);
@@ -23,13 +30,21 @@ export default function InfoArea(props) {
   });
   return (
     <div className={classes.infoArea}>
-      <div className={iconWrapper}>
-        <props.icon className={iconClasses} />
-      </div>
-      <div className={classes.descriptionWrapper}>
-        <h4 className={classes.title}>{title}</h4>
-        <p className={classes.description}>{description}</p>
-      </div>
+      <Card plain>
+        <CardHeader color={iconColor} stats icon>
+          <CardIcon>
+            <div className={iconWrapper} >
+              <props.icon className={iconClasses} />
+            </div>
+          </CardIcon>
+          <h4 className={classes.title}>{title}</h4>
+        </CardHeader>
+        <CardFooter stats>
+          <div className={classes.descriptionWrapper}>
+            <p className={classes.description}>{description}</p>
+          </div>
+        </CardFooter>
+      </Card>
     </div>
   );
 }

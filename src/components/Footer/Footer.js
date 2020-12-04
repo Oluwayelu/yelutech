@@ -2,6 +2,7 @@
 import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
+import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa'
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // material-ui core components
@@ -10,7 +11,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
-
+import Button from "../CustomButtons/Button";
 import styles from "../../assets/js/components/footerStyle";
 import GridContainer from "../Grid/GridContainer";
 import GridItem from "../Grid/GridItem";
@@ -33,23 +34,22 @@ export default function Footer(props) {
       <div className={classes.container}>
         <div className={classes.left}>
           <GridContainer className={classes.list}>
-            <GridItem xs={12} sm={12} md={12} className={classes.inlineBlock}>
+            <GridItem xs={12} sm={12} md={12} >
+              <h3 className={classes.text}>Quick Links</h3>
+            </GridItem>
+            <GridItem xs={6} sm={6} md={6} >
               <a
                 href="/"
                 className={classes.block}
               >
                 YeLu Tech
               </a>
-            </GridItem>
-            <GridItem xs={3} className={classes.inlineBlock}>
               <a
                 href="/about"
                 className={classes.block}
               >
                 About Us
               </a>
-            </GridItem>
-            <GridItem xs={3} className={classes.inlineBlock}>
               <a
                 href="/contact"
                 className={classes.block}
@@ -57,23 +57,19 @@ export default function Footer(props) {
                 Contact Us
               </a>
             </GridItem>
-            <GridItem xs={3} className={classes.inlineBlock}>
+            <GridItem xs={6} sm={6} md={6} >
               <a
                 href="/blog"
                 className={classes.block}
               >
                 Blog
               </a>
-            </GridItem>
-            <GridItem xs={3} className={classes.inlineBlock}>
               <a
                 href="/license"
                 className={classes.block}
               >
                 Licenses
               </a>
-            </GridItem>
-            <GridItem xs={3} className={classes.inlineBlock}>
               <a
                 href="/terms&condition"
                 className={classes.block}
@@ -82,7 +78,17 @@ export default function Footer(props) {
                 Terms And Condition
               </a>
             </GridItem>
-
+            <GridItem >
+              <Button justIcon simple>
+                <FaTwitter className={classes.socialIcon} />
+              </Button>
+              <Button justIcon simple>
+                <FaInstagram className={classes.socialIcon} />
+              </Button>
+              <Button justIcon simple>
+                <FaFacebook className={classes.socialIcon} />
+              </Button>
+            </GridItem>
           </GridContainer>
         </div>
         <div className={classes.right}>

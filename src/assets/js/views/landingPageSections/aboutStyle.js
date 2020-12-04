@@ -1,8 +1,8 @@
 import { secondaryColor, title } from "../../styles";
 
-const productStyle = {
+const aboutStyle = {
   section: {
-    padding: "0px 0",
+    padding: "20px 0",
     textAlign: "center"
   },
   title: {
@@ -12,13 +12,9 @@ const productStyle = {
     minHeight: "32px",
     textDecoration: "none"
   },
-  cardHidden: {
-    opacity: "0",
-    transform: "translate3d(0, -60px, 0)"
-  },
   description: {
     color: secondaryColor
   }
 };
 
-export default productStyle;
+export default aboutStyle;

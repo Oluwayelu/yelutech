@@ -1,4 +1,4 @@
-import { container, primaryColor, dangerColor, whiteColor, blackColor } from "../styles";
+import { container, primaryColor, dangerColor, whiteColor, blackColor, secondaryColor } from "../styles";
 
 const footerStyle = {
   block: {
@@ -35,6 +35,11 @@ const footerStyle = {
     textDecoration: "none",
     backgroundColor: "transparent"
   },
+  text: {
+    color: secondaryColor,
+    textDecoration: "none",
+    backgroundColor: "transparent"
+  },
   footerWhiteFont: {
     "&,&:hover,&:focus": {
       color: whiteColor
@@ -57,6 +62,13 @@ const footerStyle = {
     position: "relative",
     top: "3px",
     color: dangerColor
+  },
+  socialIcon: {
+    width: "18px",
+    height: "18px",
+    position: "relative",
+    top: "3px",
+    color: secondaryColor
   }
 };
 export default footerStyle;

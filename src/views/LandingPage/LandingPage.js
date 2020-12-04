@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import classNames from 'classnames'
+// @material-ui/icons
+import { Assessment, AlternateEmail, Computer, MobileFriendly } from '@material-ui/icons'
 
 import { makeStyles } from "@material-ui/core/styles";
 import styles from '../../assets/js/views/landingPageStyle'
+import image from "../../assets/img/examples/olu-eletu.jpg"
 
 import Navbar from '../../components/Header/Navbar/Navbar';
 import NavLeftLinks from '../../components/Header/Navbar/NavLeftLink';
@@ -20,6 +23,8 @@ import ProductSection from './Sections/ProductSection';
 import WorkSection from './Sections/WorkSection';
 import TestimoniesSection from './Sections/TestimoniesSection';
 import BlogSection from './Sections/BlogSection';
+import AboutSection from './Sections/AboutSection';
+import { Hidden } from '@material-ui/core';
 
 const useStyles = makeStyles(styles)
 const LandingPage = (props) => {
@@ -69,19 +74,30 @@ const LandingPage = (props) => {
         open={openModal}
         setOpen={setOpenModal}
       />
+
       <div className={classNames(classes.main, classes.mainRaised)}>
+
+        <div style={{ backgroundColor: "" }}>
+          <div className={classes.container}>
+            <ProductSection />
+          </div>
+        </div>
         <div className={classes.container}>
-          <ProductSection />
+          <AboutSection />
         </div>
         <div className={classes.secondary}>
           <GridContainer>
+            <Hidden smDown>
+              <GridItem md={6}>
+                <img src={image} alt="test" style={{ width: "80%", height: "80%", marginTop: "50px", marginLeft: "120px" }} />
+              </GridItem>
+            </Hidden>
+
             <GridItem md={6}>
               <TestimoniesSection />
             </GridItem>
           </GridContainer>
         </div>
-
-        <BlogSection />
         <WorkSection />
       </div>
       <Footer />

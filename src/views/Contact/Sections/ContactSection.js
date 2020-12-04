@@ -21,14 +21,14 @@ export default function ContactSection() {
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
-        <GridItem cs={8} sm={8} md={8}>
+        <GridItem xs={8} sm={8} md={8}>
           <h2 className={classes.title}>Contact us Today</h2>
           <h4 className={classes.description}>
             Let's get started on your project
           </h4>
           <form>
             <GridContainer>
-              <GridItem xs={12} sm={6} md={6}>
+              <GridItem xs={12} sm={12} md={6}>
                 <GridItem xs={12}>
                   <CustomInput
                     labelText="Your Name"
@@ -71,14 +71,14 @@ export default function ContactSection() {
                   <Button color="primary">Send Message</Button>
                 </GridItem>
               </GridItem>
-              <GridItem xs={12} sm={6} md={6}>
+              <GridItem xs={12} sm={12} md={6}>
                 <h3 className={classes.description}>
                   You can also contact us by
                 </h3>
                 <GridItem >
                   <div>
                     <Button justIcon simple>
-                      <Email style={{ color: "#ccf122" }} />
+                      <Email className={classes.icon} />
                     </Button>
                     team@yelutech.com
                   </div>
@@ -86,7 +86,7 @@ export default function ContactSection() {
                 <GridItem >
                   <div>
                     <Button justIcon simple>
-                      <Call style={{ color: "#007bff" }} />
+                      <Call className={classes.icon} />
                     </Button>
                     +234-0905-315-6229
                   </div>
@@ -94,7 +94,7 @@ export default function ContactSection() {
                 <GridItem >
                   <div>
                     <Button justIcon simple>
-                      <LocationOn style={{ color: "#cfcfcf" }} />
+                      <LocationOn className={classes.icon} />
                     </Button>
                     Unilag, Akoka, Lagos State, Nigeria.
                   </div>
@@ -102,13 +102,13 @@ export default function ContactSection() {
                 <h4 className={classes.description}>Follow us on </h4>
                 <GridItem >
                   <Button justIcon simple>
-                    <FaTwitter />
+                    <FaTwitter className={classes.icon} />
                   </Button>
                   <Button justIcon simple>
-                    <FaInstagram />
+                    <FaInstagram className={classes.icon} />
                   </Button>
                   <Button justIcon simple>
-                    <FaFacebook />
+                    <FaFacebook className={classes.icon} />
                   </Button>
                 </GridItem>
               </GridItem>

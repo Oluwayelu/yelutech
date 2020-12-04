@@ -37,7 +37,7 @@ export default function ServiceSection() {
               title="Website Development"
               description="We create world class responsive Web pages on all platforms available"
               icon={Computer}
-              iconColor="info"
+              iconColor="rose"
               vertical
             />
           </GridItem>
@@ -46,7 +46,7 @@ export default function ServiceSection() {
               title="Mobile Development(iOS & Android)"
               description="Let us help you build useful Mobile apps both on iOS and Android platforms with beutiful UI"
               icon={MobileFriendly}
-              iconColor="success"
+              iconColor="rose"
               vertical
             />
           </GridItem>
@@ -55,7 +55,7 @@ export default function ServiceSection() {
               title="SEO"
               description="Most times your applications do not get recognised by search engines. We have got you covered"
               icon={Assessment}
-              iconColor="danger"
+              iconColor="rose"
               vertical
             />
           </GridItem>
@@ -73,7 +73,7 @@ export default function ServiceSection() {
               title="Social Media Management"
               description="We also help you grow and manage your Social Media platforms "
               icon={ChatBubble}
-              iconColor="primary"
+              iconColor="rose"
               vertical
             />
           </GridItem>
@@ -82,7 +82,7 @@ export default function ServiceSection() {
               title="Brand Design & Strategy"
               description="You don't know how to develop your Brand, we can help with that so that you can reach the market on time"
               icon={Business}
-              iconColor="gray"
+              iconColor="rose"
               vertical
             />
           </GridItem>
@@ -100,7 +100,7 @@ export default function ServiceSection() {
               title="Team Training"
               description="Are you are StartUp Company, we can help you create world class Team members for the quick Growth of your Company"
               icon={People}
-              iconColor="danger"
+              iconColor="rose"
               vertical
             />
           </GridItem>

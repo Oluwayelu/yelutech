@@ -28,7 +28,7 @@ export default function WorkSection() {
           </h4>
           <form>
             <GridContainer>
-              <GridItem xs={12} sm={6} md={6}>
+              <GridItem xs={12} sm={12} md={6}>
                 <GridItem xs={12}>
                   <CustomInput
                     labelText="Your Name"
@@ -71,7 +71,7 @@ export default function WorkSection() {
                   <Button color="primary">Send Message</Button>
                 </GridItem>
               </GridItem>
-              <GridItem xs={12} sm={6} md={6}>
+              <GridItem xs={12} sm={12} md={6}>
                 <h3 className={classes.description}>
                   You can also contact us by
                 </h3>
