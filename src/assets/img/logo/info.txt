@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: clarikagrot-medium
+font link: https://www.fontspring.com/fonts/the-refinery/clarika/clarika-grotesque-medium
+font author: The Refinery
+font author site: https://www.refinerybrand.com/
+Slogan Font: Questrial-Regular.otf
+
+icon designer: Brad Avison
+icon designer link: /pixelpusher
+        
+
+fontColor: {"hex":"#007BAA"}
+bgColor: {"hex":"#1A1A1D"}
+iconColor: {"hex":"#007BAA"}
+sloganColor: {"hex":"#e91e63"}
+      

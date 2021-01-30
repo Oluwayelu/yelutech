@@ -1,10 +1,10 @@
-import { cardTitle, title, container } from "../../styles";
+import { cardTitle, title, container, primaryColor, whiteColor, secondaryColor } from "../../styles";
 import imagesStyle from "../../imagesStyles";
 
 const testimoniesStyle = {
   container: {
     zIndex: "12",
-    color: "#FFFFFF",
+    color: primaryColor,
     ...container
   },
   section: {
@@ -14,7 +14,7 @@ const testimoniesStyle = {
   },
   title: {
     ...title,
-    color: "#fff",
+    color: whiteColor,
     marginBottom: "1rem",
     marginTop: "30px",
     minHeight: "32px",
@@ -27,13 +27,13 @@ const testimoniesStyle = {
   },
   cardTitle: {
     ...cardTitle,
-    color: "#ddd"
+    color: primaryColor
   },
   smallTitle: {
-    color: "#aaa"
+    color: secondaryColor
   },
   description: {
-    color: "#ccc"
+    color: primaryColor
   },
   justifyCenter: {
     justifyContent: "center !important"
@@ -47,7 +47,7 @@ const testimoniesStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "#999"
+    color: primaryColor
   },
   margin5: {
     margin: "5px"

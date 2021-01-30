@@ -17,12 +17,13 @@ import NavRightLinks from '../../components/Header/Navbar/NavRightLink';
 import Footer from '../../components/Footer/Footer';
 import Modal from '../../components/Modal/Modal';
 import CreateProject from '../../components/Project/CreateProject';
-
+import logo from '../../assets/img/logo/cover.png'
+import svgBackground1 from '../../assets/svg/wave1.svg'
+import svgBackground2 from '../../assets/svg/wave2.svg'
 //Sections of Landing page
 import ProductSection from './Sections/ProductSection';
 import WorkSection from './Sections/WorkSection';
 import TestimoniesSection from './Sections/TestimoniesSection';
-import BlogSection from './Sections/BlogSection';
 import AboutSection from './Sections/AboutSection';
 import { Hidden } from '@material-ui/core';
 
@@ -35,12 +36,12 @@ const LandingPage = (props) => {
       <Navbar
         color="transparent"
         routes={[]}
-        brand="YeLu Tech"
+        brand={<img className={classes.logo} src={logo} alt="logo" />}
         leftLinks={<NavLeftLinks />}
         rightLinks={<NavRightLinks />}
         fixed
         changeColorOnScroll={{
-          height: 200,
+          height: 0,
           color: "dark"
         }}
       />
@@ -48,7 +49,6 @@ const LandingPage = (props) => {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <img className={classes.logo} src={require('../../assets/img/logo-1.png')} alt="logo" /><br />
               <h1 className={classes.title}>Your Story Starts With Us.</h1>
               <h4>
                 Welcome to the Home of Technology. Here we are changing the world through the use of Technology.
@@ -77,15 +77,15 @@ const LandingPage = (props) => {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
 
-        <div style={{ backgroundColor: "" }}>
-          <div className={classes.container}>
-            <ProductSection />
-          </div>
-        </div>
-        <div className={classes.container}>
-          <AboutSection />
+        <div style={{ backgroundImage: 'url(' + svgBackground2 + ')', backgroundRepeat: "no-repeat", backgroundPosition: 'bottom' }}>
+          <ProductSection />
         </div>
         <div className={classes.secondary}>
+          <div className={classes.container}>
+            <AboutSection />
+          </div>
+        </div>
+        <div style={{ backgroundImage: 'url(' + svgBackground1 + ')', backgroundRepeat: "no-repeat" }}>
           <GridContainer>
             <Hidden smDown>
               <GridItem md={6}>

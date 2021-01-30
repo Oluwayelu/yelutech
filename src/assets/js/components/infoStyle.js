@@ -52,7 +52,8 @@ const infoStyle = {
   },
   title,
   description: {
-    color: tertiaryColor,
+    color: primaryColor,
+    textAlign: "left",
     overflow: "hidden",
     marginTop: "0px",
     fontSize: "14px"

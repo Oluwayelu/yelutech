@@ -11,6 +11,8 @@ import GridItem from '../../components/Grid/GridItem'
 import NavRightLinks from '../../components/Header/Navbar/NavRightLink';
 import Footer from '../../components/Footer/Footer';
 import AboutSection from './Sections/AboutSection';
+import svgBackground1 from '../../assets/svg/wave1.svg'
+import logo from '../../assets/img/logo/cover.png'
 const useStyles = makeStyles(styles)
 const AboutPage = (props) => {
   const classes = useStyles()
@@ -19,7 +21,7 @@ const AboutPage = (props) => {
       <Navbar
         color="transparent"
         routes={[]}
-        brand="YeLu Tech"
+        brand={<img className={classes.logo} src={logo} alt="logo" />}
         leftLinks={<NavLeftLinks />}
         rightLinks={<NavRightLinks />}
         fixed
@@ -42,7 +44,13 @@ const AboutPage = (props) => {
         </div>
       </Parallax>
 
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main, classes.mainRaised)}
+        style={{
+          backgroundImage: 'url(' + svgBackground1 + ')',
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "top"
+        }}
+      >
         <AboutSection />
       </div>
       <Footer />

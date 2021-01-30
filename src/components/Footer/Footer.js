@@ -6,7 +6,6 @@ import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa'
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // material-ui core components
-import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
@@ -15,6 +14,8 @@ import Button from "../CustomButtons/Button";
 import styles from "../../assets/js/components/footerStyle";
 import GridContainer from "../Grid/GridContainer";
 import GridItem from "../Grid/GridItem";
+
+import logo from '../../assets/img/logo/cover.png'
 
 const useStyles = makeStyles(styles);
 
@@ -37,19 +38,23 @@ export default function Footer(props) {
             <GridItem xs={12} sm={12} md={12} >
               <h3 className={classes.text}>Quick Links</h3>
             </GridItem>
-            <GridItem xs={6} sm={6} md={6} >
+            <GridItem xs={6} sm={6} md={2} >
               <a
                 href="/"
                 className={classes.block}
               >
                 YeLu Tech
               </a>
+            </GridItem>
+            <GridItem xs={6} sm={6} md={2} >
               <a
                 href="/about"
                 className={classes.block}
               >
                 About Us
               </a>
+            </GridItem>
+            <GridItem xs={6} sm={6} md={2} >
               <a
                 href="/contact"
                 className={classes.block}
@@ -57,19 +62,23 @@ export default function Footer(props) {
                 Contact Us
               </a>
             </GridItem>
-            <GridItem xs={6} sm={6} md={6} >
+            <GridItem xs={6} sm={6} md={2} >
               <a
                 href="/blog"
                 className={classes.block}
               >
                 Blog
               </a>
+            </GridItem>
+            <GridItem xs={6} sm={6} md={2} >
               <a
                 href="/license"
                 className={classes.block}
               >
                 Licenses
               </a>
+            </GridItem>
+            <GridItem xs={6} sm={6} md={2} >
               <a
                 href="/terms&condition"
                 className={classes.block}
@@ -92,13 +101,13 @@ export default function Footer(props) {
           </GridContainer>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
+          &copy; {1900 + new Date().getYear()} , All rights reserved | made with {" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
             href="/"
             className={aClasses}
           >
-            YeLu Tech
+            <img src={logo} className={classes.logo} />
           </a>
         </div>
       </div>

@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Baloo-Regular
+font link: https://fonts.google.com/specimen/Baloo
+font author: Ek Type
+font author site: https://ektype.in/
+Slogan Font: Aleo-Light.otf
+
+icon designer: Brad Avison
+icon designer link: /pixelpusher
+        
+
+fontColor: {"hex":"#007baa"}
+bgColor: {"hex":"#1a1a1d"}
+iconColor: {"hex":"#007baa"}
+sloganColor: {"hex":"#007baa"}
+      

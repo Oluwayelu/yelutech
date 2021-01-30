@@ -11,6 +11,8 @@ import GridItem from '../../components/Grid/GridItem'
 import NavRightLinks from '../../components/Header/Navbar/NavRightLink';
 import Footer from '../../components/Footer/Footer';
 import ContactSection from './Sections/ContactSection';
+import svgBackground1 from '../../assets/svg/wave1.svg'
+import logo from '../../assets/img/logo/cover.png'
 const useStyles = makeStyles(styles)
 const ContactPage = (props) => {
   const classes = useStyles()
@@ -19,7 +21,7 @@ const ContactPage = (props) => {
       <Navbar
         color="transparent"
         routes={[]}
-        brand="YeLu Tech"
+        brand={<img className={classes.logo} src={logo} alt="logo" />}
         leftLinks={<NavLeftLinks />}
         rightLinks={<NavRightLinks />}
         fixed
@@ -39,7 +41,13 @@ const ContactPage = (props) => {
         </div>
       </Parallax>
 
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main, classes.mainRaised)}
+        style={{
+          backgroundImage: 'url(' + svgBackground1 + ')',
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "top"
+        }}
+      >
         <ContactSection />
       </div>
       <Footer />

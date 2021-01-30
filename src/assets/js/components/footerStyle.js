@@ -10,7 +10,8 @@ const footerStyle = {
     borderRadius: "3px",
     textDecoration: "none",
     position: "relative",
-    display: "block"
+    display: "block",
+    textAlign: "left"
   },
   left: {
     float: "left !important",
@@ -37,6 +38,7 @@ const footerStyle = {
   },
   text: {
     color: secondaryColor,
+    textAlign: "left",
     textDecoration: "none",
     backgroundColor: "transparent"
   },
@@ -69,6 +71,10 @@ const footerStyle = {
     position: "relative",
     top: "3px",
     color: secondaryColor
+  },
+  logo: {
+    width: "100px",
+    marginBottom: "-15px"
   }
 };
 export default footerStyle;

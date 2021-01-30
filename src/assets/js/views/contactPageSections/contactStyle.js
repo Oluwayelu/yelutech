@@ -2,12 +2,12 @@ import { secondaryColor, primaryColor, title } from "../../styles";
 
 const contactStyle = {
   section: {
-    padding: "20px 0",
+    padding: "40px 0",
   },
   title: {
     ...title,
     marginBottom: "50px",
-    marginTop: "30px",
+    marginTop: "50px",
     minHeight: "32px",
     textDecoration: "none",
     textAlign: "center"

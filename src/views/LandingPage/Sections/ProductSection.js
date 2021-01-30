@@ -23,7 +23,7 @@ export default function ProductSection() {
     if (pageHeight > 250) {
       setTimeout(function () {
         setCardAnimation("");
-      }, 700);
+      }, 100);
     }
   }
   window.addEventListener("scroll", showCard)
