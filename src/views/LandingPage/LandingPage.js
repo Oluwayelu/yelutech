@@ -36,7 +36,7 @@ const LandingPage = (props) => {
       <Navbar
         color="transparent"
         routes={[]}
-        brand={<img className={classes.logo} src={logo} alt="logo" />}
+        brand="YeLu Tech"
         leftLinks={<NavLeftLinks />}
         rightLinks={<NavRightLinks />}
         fixed
