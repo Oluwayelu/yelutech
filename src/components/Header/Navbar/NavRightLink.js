@@ -26,7 +26,7 @@ const NavRightLinks = (props) => {
           placement={window.innerWidth > 959 ? "top" : "left"}
         >
           <Button
-            href="#"
+            href="https://mobile.twitter.com/yelutechnologi1"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -42,7 +42,7 @@ const NavRightLinks = (props) => {
           placement={window.innerWidth > 959 ? "top" : "left"}
         >
           <Button
-            href="#"
+            href="https://m.facebook.com/YeLu-Technologies-107386934647949/?refid=11&__xts__%5B0%5D=11.%7B%22event%22%3A%22visit_page_tab%22%2C%22user_id%22%3A100017550064049%2C%22page_id%22%3A107386934647949%7D&_rdr"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -58,7 +58,7 @@ const NavRightLinks = (props) => {
           placement={window.innerWidth > 959 ? "top" : "left"}
         >
           <Button
-            href="#"
+            href="https://www.instagram.com/yelutech/"
             target="_blank"
             color="transparent"
             className={classes.navLink}
